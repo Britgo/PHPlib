@@ -48,7 +48,7 @@ function getcredentials($appname)
 		if ($matches[1] != $appname)
 			continue;
 		$db = null;
-		$us = null;
+		$un = null;
 		$pw = null;
 		while ($l = fgets($fh, 1024))  {
 			if (!preg_match("/^\s*(\w+)\s*=\s*(.*)\n/", $l, $matches))
